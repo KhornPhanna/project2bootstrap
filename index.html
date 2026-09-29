@@ -16,10 +16,10 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <style>
+    <!-- <style>
       .nav-link:hover {
         text-decoration: underline;
-      }
+      } -->
     </style>
   </head>
   <body>
@@ -46,15 +46,15 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <li class="classlink">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
+              <li class="classlink">
                 <a class="nav-link active" aria-current="page" href="#"
                   >contact</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="classlink">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Profile</a
                 >
@@ -348,3 +348,8 @@
     </footer>
   </body>
 </html>
+<script>
+  const classlink=({isactive})=>`
+    ${isactive}? 'underline':'hover:underline'
+  `
+</script>
